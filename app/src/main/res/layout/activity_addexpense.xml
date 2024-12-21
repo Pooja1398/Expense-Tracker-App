@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_expense"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Expenses"
+        app:titleTextColor="#FFFFFF" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="94dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/expenses"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_add_expense"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_add_expense" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="360dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/toolbar_add_expense"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_add_expense">
+
+        <EditText
+            android:id="@+id/expense_amount"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_add_expense" />
+
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="298dp"
+            android:layout_height="60dp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expense_amount" />
+
+        <EditText
+            android:id="@+id/expense_notes"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="439dp"
+            android:hint="Notes (optional)"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_add_expense"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="378dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_add_expense"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="298dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Selected date"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="36dp"
+                tools:layout_editor_absoluteY="219dp" />
+
+            <Button
+                android:id="@+id/buttonPickDate"
+                android:layout_width="192dp"
+                android:layout_height="60dp"
+
+                android:layout_gravity="center"
+                android:text="Pick a date"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/save_expense_button"
+                android:layout_width="291dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/button_color"
+                android:text="Save Expenses"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

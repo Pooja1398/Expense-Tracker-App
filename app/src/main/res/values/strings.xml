@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Expenses Tracker App</string>
+    <string-array name="category">
+        <item>Grocery</item>
+        <item>Rent</item>
+        <item>Utilities(Electricity, Water, Gas)</item>
+        <item>Transportation</item>
+        <item>Dining Out(Restaurants, takeouts)</item>
+        <item>Entertainment</item>
+        <item>Insurance</item>
+        <item>Education</item>
+        <item>Clothing</item>
+        <item>Personal Care(Salon, Grooming)</item>
+        <item>Household Supplies</item>
+        <item>Subscriptions</item>
+        <item>Savings</item>
+        <item>Debt Repayment</item>
+    </string-array>
+</resources>

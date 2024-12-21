@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="158dp"
+        android:layout_height="42dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#886C04"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="631dp"
+        android:background="@drawable/btn_gradient"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="144dp"
+            android:contentDescription="TODO"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:src="@drawable/baseline_control_camera_24"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="292dp"
+            android:layout_height="53dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:hint="Enter username"
+            android:textColorHint="#757575"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="297dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:inputType="numberPassword"
+            android:hint="Enter password"
+            android:textColorHint="#757575"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/button_color"
+            android:text="Login"
+            android:textColor="#ffffff"
+            tools:ignore="DuplicateSpeakableTextCheck,HardcodedText" />
+
+        <TextView
+            android:id="@+id/signUpLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:text="Don't have an account? Sign Up"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,KeyboardInaccessibleWidget" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

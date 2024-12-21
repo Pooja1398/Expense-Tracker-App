@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/e2"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="600dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="122dp"
+                android:layout_height="190dp"
+                android:src="@drawable/mainicon"
+                android:layout_marginLeft="110dp"/>
+
+            <TextView
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="cursive"
+                android:text="Expenses Tracker"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DE3163"
+                android:text="Sign in"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#DE3163"
+                android:text="Login"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

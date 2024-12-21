@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".budgettrack">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Budget tracking"
+        app:titleTextColor="#FFFFFF" />
+
+
+    <ScrollView
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flow_verticalAlign="baseline"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.036">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout4">
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Grocery"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/chb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Rent"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/chb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Utilities(Electricity, Water, Gas)"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/chb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Transportation"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Dining Out(Restaurants, takeouts)"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Entertainment"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Insurance"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Education"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Clothing"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Personal Care(Salon, Grooming)"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Household Supplies"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Subscriptions"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Savings"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="Debt Repayment"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/chb14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Budget"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/savebudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
